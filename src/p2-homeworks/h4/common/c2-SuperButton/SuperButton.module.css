@@ -1,0 +1,37 @@
+.default {
+    text-decoration: none;
+    user-select: none;
+    background: rgb(215, 214, 214);
+    padding: .5em 1.5em;
+    outline: none;
+    border: 0.01em solid #b1b1b1;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: inherit;
+}
+.default:hover {
+    background: rgb(196, 196, 196);
+}
+.default:active {
+    background: rgb(112, 112, 112);
+}
+
+.red {
+    color: #CCD1D1 ;
+    text-decoration: none;
+    user-select: none;
+    background: white;
+    padding: .5em 1.5em;
+    outline: none;
+    border: 2px solid #95A5A6;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.red:hover {
+    background-color: #555555;
+    color: white;
+}
+.red:active {
+    background: grey;
+}

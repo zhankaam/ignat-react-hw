@@ -1,0 +1,49 @@
+.someClass {
+
+}
+
+.error {
+    height: 20px;
+    width: 200px;
+    outline: none;
+    background: whitesmoke;
+    border: 2px solid #f18973;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+
+.state {
+    height: 20px;
+    width: 200px;
+    color: plum;
+    font-size: 18px;
+    font-family: "Bookman Old Style";
+    outline: none;
+    background: #deeaee;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+.users {
+    display: inline-block;
+    margin: 10px;
+}
+.button {
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    background: #D7BDE2;
+    padding: .5em 1.0em;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+.button:hover {
+    background: #BB8FCE ;
+}
+
+.button:active {
+    background: #FBEEE6 ;
+}

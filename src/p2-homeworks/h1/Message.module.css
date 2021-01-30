@@ -1,0 +1,49 @@
+.Message {
+      min-height: 40vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+.textbox {
+padding: 6px 12px 20px 20px;
+border-radius: 5px;
+transform: translateY(-28px);
+background: lightslategray;
+
+}
+
+.text {
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    align-items:center;
+}
+
+.name {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: rgb(221,210,210);
+}
+
+.textbox {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.time {
+    font-size:xx-small;
+    position: absolute;
+    bottom: 27%;
+    right: 3px;
+}
+

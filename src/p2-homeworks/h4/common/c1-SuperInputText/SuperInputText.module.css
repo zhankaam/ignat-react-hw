@@ -1,0 +1,15 @@
+.superInput {
+    border: 2px solid powderblue;
+    outline: none;
+}
+
+.errorInput {
+    border: 3px solid lightblue;
+    background: white;
+    outline: none;
+}
+
+.error {
+    color: #AED6F1;
+    font-weight: 600;
+}

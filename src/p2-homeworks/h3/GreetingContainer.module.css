@@ -1,0 +1,12 @@
+.content {
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #A2D9CE;
+    border-radius: 10px;
+    width: 270px;
+    padding: 5px;
+    margin: 0 auto;
+}

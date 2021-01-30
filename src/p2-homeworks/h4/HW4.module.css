@@ -1,0 +1,16 @@
+.blue {
+    border-bottom: 5px solid powderblue;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #5D6D7E ;
+    border-radius: 14px;
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+}
