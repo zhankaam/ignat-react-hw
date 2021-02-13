@@ -1,8 +1,9 @@
 import React, {useState} from "react";
-import {homeWorkReducer} from "./bll/homeWorkReducer";
+import { homeWorkReducer, InitialStateType} from "./bll/homeWorkReducer";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import s from "./HW8.module.css"
 
-const initialPeople = [
+export const initialPeople: InitialStateType[] = [
     {_id: 0, name: "Кот", age: 3},
     {_id: 1, name: "Александр", age: 66},
     {_id: 2, name: "Коля", age: 16},
@@ -12,33 +13,37 @@ const initialPeople = [
 ]
 
 function HW8() {
-    const [people, setPeople] = useState(initialPeople);
+    const [people, setPeople] = useState<InitialStateType[]>(initialPeople);
 
     const finalPeople = people.map(p => (
         <div key={p._id}>
-            some name, age
+            {p.name}, {p.age}
+           {/* some name, age*/}
         </div>
     ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: "sort", payload: "up"}))
+    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: "SORT_UP_STATE", payload: "up"}))
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: "SORT_DOWN_STATE", payload: "down"}))
+    const check = () => setPeople(homeWorkReducer(initialPeople, {type: "CHECK_STATE"}))
 
     return (
         <div>
             <hr/>
-            homeworks 8
+             <h3> homeworks 8</h3>
 
             {/*should work (должно работать)*/}
 
             {finalPeople}
-            <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div>sort down</div>
-
-            check 18
+            <div className={s.buttons}>
+                <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
+                <div><SuperButton onClick={sortDown}>sort down</SuperButton></div>
+                <div><SuperButton onClick={check}>check 18</SuperButton></div>
+            </div>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativePeople/>*/}
-            <hr/>
+           {/* <hr/>*/}
         </div>
     );
 }
