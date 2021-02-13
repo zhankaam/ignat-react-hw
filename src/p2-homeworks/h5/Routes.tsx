@@ -6,7 +6,8 @@ import JuniorPlus from "./pages/JuniorPlus";
 
 export const PATH = {
     PRE_JUNIOR: "/pre-junior",
-    JUNIOR_PLUS: "/junior-plus"
+    JUNIOR_PLUS: "/junior-plus",
+    ERROR_404: "/pageNotFound"
     // add paths
 }
 
@@ -22,10 +23,11 @@ function Routes() {
 
             {<Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>}
             <Route path={PATH.JUNIOR_PLUS} exact render={() => <JuniorPlus/>}/>
+            <Route path={PATH.ERROR_404} exact render={() => <Error404/>}/>
                 // add routes
 
             {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
-            {<Route render={() => <Error404/>}/>}
+            {/*{<Route render={() => <Error404/>}/>}*/}
 
             </Switch>
         </div>

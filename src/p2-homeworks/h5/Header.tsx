@@ -15,6 +15,7 @@ function Header() {
             <div className={`${s.containerMenu} ${activeMenu && s.activeMenu}`}>
                 <NavLink to={PATH.PRE_JUNIOR} activeClassName={s.active} className={s.menuLinks}> PreJunior</NavLink>
                 <NavLink to={PATH.JUNIOR_PLUS} activeClassName={s.active} className={s.menuLinks}> Junior + </NavLink>
+                <NavLink to={PATH.ERROR_404} activeClassName={s.active} className={s.menuLinks}> Error  </NavLink>
             </div>
 
              {/*add NavLinks*/}

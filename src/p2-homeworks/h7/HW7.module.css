@@ -1,0 +1,21 @@
+.wrapper {
+    text-align: center;
+    padding: 30px;
+    font-family: "Bookman Old Style";
+    font-size: medium;
+    font-weight: inherit;
+    color:#3e4444 ;
+}
+.superSelectContainer {
+    padding: 10px;
+    position: relative;
+}
+
+.superRadioContainer {
+
+}
+.option {
+    border-radius: 4px;
+    background-color: darkgrey;
+   font-size: 1.3em;
+}
