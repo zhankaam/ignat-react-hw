@@ -1,0 +1,59 @@
+.title {
+    font-family: sans-serif;
+    margin: 100px auto;
+    text-align: center;
+    font-size: 25px;
+    max-width: 450px;
+    position: relative;
+    background: #5d6d7e;
+    color: paleturquoise;
+}
+.title:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    background: #000;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+.title:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    background: cornflowerblue;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+.wrapper {
+    height: 80vh;
+}
+.time {
+    border: 2px double cadetblue;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: cadetblue;
+    font-family: monospace;
+    letter-spacing: 8px;
+    font-weight: bold;
+    font-size: 8em;
+}
+.data {
+    padding-bottom: 10px;
+    font-family: "HoloLens MDL2 Assets";
+    font-size: 3em;
+    color: #5d6d7e;
+    letter-spacing: 2px;
+}
