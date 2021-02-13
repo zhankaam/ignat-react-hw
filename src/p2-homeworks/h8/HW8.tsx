@@ -27,17 +27,17 @@ function HW8() {
     const check = () => setPeople(homeWorkReducer(initialPeople, {type: "CHECK_STATE"}))
 
     return (
-        <div>
+        <div className={s.container}>
             <hr/>
-             <h3> homeworks 8</h3>
+             <h3 className={s.title}> homeworks 8</h3>
 
             {/*should work (должно работать)*/}
 
             {finalPeople}
             <div className={s.buttons}>
-                <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-                <div><SuperButton onClick={sortDown}>sort down</SuperButton></div>
-                <div><SuperButton onClick={check}>check 18</SuperButton></div>
+                <div className={s.sortUpBtn}><SuperButton onClick={sortUp}>sort up</SuperButton></div>
+                <div className={s.sortDown}><SuperButton onClick={sortDown}>sort down</SuperButton></div>
+                <div className={s.checkBtn}><SuperButton onClick={check}>check 18</SuperButton></div>
             </div>
 
             <hr/>
