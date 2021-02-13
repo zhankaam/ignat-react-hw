@@ -14,13 +14,13 @@ import HW10 from "../../../p2-homeworks/h10/HW10";
 function App() {
     return (
         <div className={s.App}>
-            <div>react homeworks:</div>
+            <h3 className={s.title}>React homeworks:</h3>
             {/*<HW1/>
             <HW2/>
             <HW3/>*/}
             {/* eslint-disable-next-line react/jsx-no-undef */}
            {/* {<HW4/>}*/}
-           //start {/*{<HW5/>}
+            {/*{<HW5/>}
             {<HW6/>}
             {<HW7/>}
             {<HW8/>}

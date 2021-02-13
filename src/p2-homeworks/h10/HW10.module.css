@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+    padding: 5px;
+}
+.loading {
+    text-align: center;
+}
+.title{
+    font-family: "Microsoft Yi Baiti";
+    font-size: 20px;
+    color: thistle;
+    background-color: papayawhip;
+}
