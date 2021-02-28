@@ -1,13 +1,14 @@
 .Message {
-      min-height: 40vh;
+      padding: 10px;
+      min-height: 10vh;
       display: flex;
       align-items: center;
       justify-content: center;
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin: 3px;
     border-radius: 50%;
 }
@@ -26,24 +27,22 @@ background: lightslategray;
     padding: 5px;
     display: flex;
     align-items:center;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
 }
 
 .name {
     font-weight: bold;
-    font-family: sans-serif;
-    font-size: 1rem;
+    font-family: "JetBrains Mono";
+    font-size: 1.5rem;
     color: rgb(221,210,210);
-}
-
-.textbox {
-    margin-bottom: 15px;
-    font-size: 0.9rem;
 }
 
 .time {
     font-size:xx-small;
     position: absolute;
-    bottom: 27%;
+    bottom: 15%;
     right: 3px;
+    font-weight: bold;
 }
 

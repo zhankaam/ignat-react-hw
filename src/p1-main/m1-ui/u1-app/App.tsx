@@ -21,12 +21,12 @@ function App() {
             <HW3/>*/}
             {/* eslint-disable-next-line react/jsx-no-undef */}
            {/* {<HW4/>}*/}
-            {/*{<HW5/>}
+            {<HW5/>}
             {<HW6/>}
             {<HW7/>}
             {<HW8/>}
-            {<HW9/>}*/}
-           {/* {<HW10/>}*/}
+            {<HW9/>}
+            {<HW10/>}
             {<HW11/>}
         </div>
     );
