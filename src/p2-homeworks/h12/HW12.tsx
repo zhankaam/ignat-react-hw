@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import s from "./HW12.module.css";
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "../h10/bll/store";
@@ -12,13 +12,13 @@ function HW12() {
     const dispatch = useDispatch()
     const onChangeCallback = (option: string) => {
       if(option === 'some'){
-          dispatch(setSomeThemeAC)
+          dispatch(setSomeThemeAC("some"))
       }
       if(option === 'dark'){
-          dispatch(setDarkThemeAC)
+          dispatch(setDarkThemeAC("dark"))
       }
       if(option === 'red'){
-          dispatch(setRedThemeAC)
+          dispatch(setRedThemeAC("red"))
       }
     }
 
