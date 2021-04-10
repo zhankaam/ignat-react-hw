@@ -17,7 +17,6 @@ function HW6() {
 
     return (
         <div className={s.fullBlock}>
-            <hr/>
             homeworks 6
 
             {/*should work (должно работать)*/}

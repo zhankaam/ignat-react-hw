@@ -58,7 +58,7 @@ function HW4() {
            {/* <AlternativeSuperInputText/>
             <AlternativeSuperButton/>
             <AlternativeSuperCheckbox/>*/}
-            <hr/>
+            {/*<hr/>*/}
         </div>
     );
 }

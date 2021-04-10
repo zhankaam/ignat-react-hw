@@ -1,12 +1,12 @@
 import React from "react";
-import HW3 from "../../h3/HW3";
+import { HW13 } from "../../h13/HW13";
 
 
 function JuniorPlus() {
     return (
         <div className='size'>
             <div className='title'>Уровень Junior+</div>
-            <HW3/>
+            <HW13/>
         </div>
     );
 }

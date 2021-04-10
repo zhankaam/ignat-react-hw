@@ -28,7 +28,7 @@ function HW8() {
 
     return (
         <div className={s.container}>
-            <hr/>
+            {/*<hr/>*/}
              <h3 className={s.title}> homeworks 8</h3>
 
             {/*should work (должно работать)*/}
@@ -40,7 +40,7 @@ function HW8() {
                 <div><SuperButton onClick={check}>check 18</SuperButton></div>
             </div>
 
-            <hr/>
+            {/*<hr/>*/}
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativePeople/>*/}
            {/* <hr/>*/}

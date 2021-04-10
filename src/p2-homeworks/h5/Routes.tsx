@@ -26,7 +26,7 @@ function Routes() {
                 // add routes
 
             {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
-            {<Route render={() => <Error404/> }  path={PATH.ERROR_404}/>}
+            {<Route path={PATH.ERROR_404} render={() => <Error404/> } />}
 
 
             </Switch>
