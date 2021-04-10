@@ -5,24 +5,18 @@ import {AppStoreType} from "../h10/bll/store";
 import {setDarkThemeAC, setRedThemeAC, setSomeThemeAC} from "./bll/themeReducer";
 import SuperSelect from "../h7/common/c5-SuperSelect/SuperSelect";
 
-const themes: string[] = ['dark', 'red', 'some'];
+const themes: Array<'dark' | 'red' | 'some'> = ['dark', 'red', 'some'];
 
 function HW12() {
-    const theme = useSelector<AppStoreType>(state => state.theme.themes)
+    const theme = useSelector<AppStoreType,string>(state => state.theme.themes)
     const dispatch = useDispatch()
     const onChangeCallback = (option: string) => {
-      if(option === 'some'){
-          dispatch(setSomeThemeAC("some"))
-      }
-      if(option === 'dark'){
-          dispatch(setDarkThemeAC("dark"))
-      }
-      if(option === 'red'){
-          dispatch(setRedThemeAC("red"))
-      }
+        dispatch(setSomeThemeAC(option))
     }
 
     return (
+        <div className={s.wrapper}>
+
         <div className={s[theme]}>
             <hr/>
             <span className={s[theme + '-text']}>
@@ -34,6 +28,7 @@ function HW12() {
             {/*SuperSelect or SuperRadio*/}
 
             <hr/>
+        </div>
         </div>
     );
 }
